@@ -1,21 +1,27 @@
 ## Tired >:]
 A new window manager using Xlib, written in C.
+Born because WHY THE FUCK DISABLE FUCKING XORG SUPPORT FOR FRICKIN GNOME!1!1!1
+And i watched LSP and it was horrible, i needed to relax and i accidentaly builded a Window Manager :/
+## Features
 ### Building
+Before compiling, we need to install dependencies, let's get that done.
+_(Those dependencies have been tested exclusively for Arch, bcuz i use arch btw)_
+### Deps
 The dependencies are few but quite important;
-`rofi` (used for `rofi -show drun`)
-`polybar` (used as status bar)
-`xterm` (used as the main terminal)
-`libx11-dev` (necessary at compile-time, not runtime)
-`xorg` (metapackage, necessary for the graphical stack, 
+- `rofi` (used for `rofi -show drun`)
+- `polybar` (used as status bar)
+- `xterm` (used as the main terminal)
+- `libx11` (necessary at compile-time, not runtime)
+- `xorg` (metapackage, necessary for the graphical stack, 
 basically the whole point, duh)
 The optional dependencies are:
-`xinit` (or xorg-xinit, necessary if ya wanna launch
+- `xinit` (or xorg-xinit, necessary if ya wanna launch
 tired without headaches)
-`xorg-xrandr` (necessary if ya wanna use multimonitor)
+- `xorg-xrandr` (necessary if ya wanna use multimonitor)
 You need to have Git and make, aswell as the C compiler.
 Here is a sample code to install dependencies in Arch:
 ```
-sudo pacman -S --needed xterm libx11-dev xorg-xinit rofi git make gcc
+sudo pacman -S --needed xterm libx11 xorg-xinit rofi git make gcc
 ```
 Then you'd wanna clone the github repo:
 ```
