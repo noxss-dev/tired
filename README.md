@@ -33,4 +33,23 @@ sudo make
 ```
 Tip: Edit the Makefile as you like with `nano Makefile`, then `sudo make`
 ### Using POSIX tools
-If you don't have sudo (i encourage you to installing sudo, it's simple), you can use the _ancient way_.
+If you don't have sudo (i encourage you to installing sudo, it's simple), you can use the _old ancient way_.
+First, remember where you are with `pwd` (mentally save that as MEOW).
+Then do:
+```
+[cat@iusearchbtw tired]$ su -
+```
+Do:
+```
+[root@iusearchbtw ~]# cd MEOW
+```
+Now, replace MEOW with the `pwd` command you previously took. Now, after all of this bs, do:
+```
+[root@iusearchbtw tired]# make
+```
+And then:
+```
+[root@iusearchbtw tired]# exit
+[cat@iusearchbtw tired]$
+```
+(was not using `sudo` really worth it?)
