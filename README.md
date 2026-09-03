@@ -27,7 +27,8 @@ The optional dependencies are:
 tired without headaches)
 - `xorg-xrandr` (necessary if ya wanna use multimonitor)
 You need to have Git and make, aswell as the C compiler.
-Here is a sample code to install dependencies in Arch:
+
+Here is a sample code to install dependencies on [Arch Linux](https://archlinux.org/):
 ```
 sudo pacman -S --needed xterm libx11 xorg-xinit rofi git make gcc
 ```
