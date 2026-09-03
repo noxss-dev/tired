@@ -3,10 +3,18 @@ A new window manager using Xlib, written in C.
 Born because WHY THE FUCK DISABLE FUCKING XORG SUPPORT FOR FRICKIN GNOME!1!1!1
 And i watched LSP and it was horrible, i needed to relax and i accidentaly builded a Window Manager :/
 ## Features
-### Building
+The Modifier key is set (for default) to Mod4, which corresponds to the Super key, or for the friends the Windows key.
+
+The default shortcuts are:
+- Windows+D = App Menu
+- Windows+K = Kill an app
+- Thats it (for today).
+
+Tired is (and will always be) one file of C code, you'll prolly never see Tired being split in more C snippets. Thats la peace (lol).
+## Building
 Before compiling, we need to install dependencies, let's get that done.
 _(Those dependencies have been tested exclusively for Arch, bcuz i use arch btw)_
-### Deps
+### Dependencies
 The dependencies are few but quite important;
 - `rofi` (used for `rofi -show drun`)
 - `polybar` (used as status bar)
