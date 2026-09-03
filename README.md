@@ -23,7 +23,7 @@ git clone https://github.com/noxss-dev/tired.git
 ```
 And changing directory:
 ```
-cd tired
+cd tired-main
 ```
 Now, you just need to compile the WM.
 ### Having sudo enabled
