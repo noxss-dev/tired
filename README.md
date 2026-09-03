@@ -1,7 +1,6 @@
 ## Tired >:]
 A new window manager using Xlib, written in C.
-Born because WHY THE FUCK DISABLE FUCKING XORG SUPPORT FOR FRICKIN GNOME!1!1!1
-And i watched LSP and it was horrible, i needed to relax and i accidentaly builded a Window Manager :/
+Born because i watched LSP and it was horrible, i needed to relax and i accidentaly builded a Window Manager :/
 ## Features
 The Modifier key is set (for default) to Mod4, which corresponds to the Super key, or for the friends the Windows key.
 
