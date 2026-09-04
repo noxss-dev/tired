@@ -1,7 +1,7 @@
 ## Tired >:]
 A new window manager using Xlib, written in C.
 Born because i watched LSP and it was horrible, i needed to relax and i accidentaly builded a Window Manager :/
-## Features
+## Key Features
 The Modifier key is set (for default) to Mod4, which corresponds to the Super key, or for the friends the Windows key.
 
 The default shortcuts are:
@@ -43,7 +43,8 @@ Now, you just need to compile the WM.
 ### Having sudo enabled
 If you have sudo enabled, you can compile the WM as easily as:
 ```
-sudo make
+make
+sudo mv ./tired /usr/bin/tired
 ```
 Tip: Edit the Makefile as you like with `nano Makefile`, then `sudo make`
 ### Using POSIX tools
@@ -59,7 +60,7 @@ Do:
 ```
 Now, replace MEOW with the `pwd` command you previously took. Now, after all of this bs, do:
 ```
-[root@iusearchbtw tired]# make
+[root@iusearchbtw tired]# make && mv ./tired /usr/bin/tired
 ```
 And then:
 ```
