@@ -8,7 +8,7 @@ The default shortcuts are:
 - Windows+D = App Menu
 - Windows+K = Kill an app
 - Thats it (for today).
-- 
+
 ***Note: We encourage r/UnixP#rn users to use a compositor like picom, as Tired doesn't have a formal config file (just as dwm).***
   
 Tired is (and will always be) one file of C code, you'll prolly never see Tired being split in more C snippets. Thats la peace (lol).
