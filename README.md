@@ -79,7 +79,7 @@ Now after all of this bs, do `make clean install` or `make`, and then `exit`.
 
 (was not using `sudo` really worth it?k).
 ## Running
-Since of 4th September 2026, an `.xinitrc` is  required other for executing Tired in an X server. Hooks can be defined in the `~/.config/tired/hooks` configuration file;
+Since of 4th September 2026, an `.xinitrc` is  required **ONLY** for executing Tired in an X server. Hooks can be defined in the `~/.config/tired/hooks` configuration file;
 ```sh
 #!/bin/sh
 feh --bg-scale $HOME/Download/my-wallpaper.png &
