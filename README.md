@@ -2,7 +2,7 @@
 <h1>Tired >:]</h1>
 </div>
 <img src="screenshotp.png">
-<i>i spoilered some features, oopsi (i use arch btw)_</i>
+<i>i spoilered some features, oopsi (i use arch btw)</i><br>
 
 A new window manager using Xlib. I needed to relax and i accidentaly builded a Window Manager :/
 
