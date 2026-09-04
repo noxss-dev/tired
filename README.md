@@ -1,6 +1,6 @@
-<div style="text-align: center">
-<h1>Tired >:]</h1>
-</div>
+
+<h1 style="text-align: center;">Tired >:]</h1>
+
 ![Tired Overview](screenshotp.png)
 _i spoilered some features, oopsi (i use arch btw)_
 
