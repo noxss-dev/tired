@@ -1,5 +1,5 @@
 ## Tired >:]
-![Tired Overview](https://github.com/noxss-dev/tired/blob/main/screenshot.png)
+![Tired Overview](screenshot.png)
 _i forgot to fastfetch, oopsi (i use arch btw)_
 
 A new window manager using Xlib. I needed to relax and i accidentaly builded a Window Manager :/
