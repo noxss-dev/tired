@@ -4,7 +4,7 @@
 <img src="screenshotp.png">
 <i>i spoilered some features, oopsi (i use arch btw)</i><br>
 
-A new window manager using Xlib. I needed to relax and i accidentaly builded a Window Manager :/
+<p>A new window manager using Xlib. I needed to relax and i accidentaly builded a Window Manager :/</p>
 
 It's aesthetically kinda cool, duh :D
 ## Key Features
