@@ -47,11 +47,13 @@ The optional dependencies are:
 tired without headaches)
 - `xorg-xrandr` (necessary if ya wanna use multimonitor)
 - `xosd` (makes a cool text in the bottom :])
-You need to have Git and make, aswell as the C compiler.
+- `ImageMagick` (screenshot in .PNG format, to use with `xwd` if you wanna take screenshots)
+- `xwd` (or `xorg-xwd`, screenshot in .XWD format, to use with `ImageMagick` if you wanna take screenshots in the PNG format)
 
+You need to have `git` and `make` (for Arch users; installing `base-devel` gives a plenty of compilation tools including `make`), aswell the C compiler (i recommend `gcc`, make sure it's aliased to `cc`) 
 Here is a sample code to install dependencies on [Arch Linux](https://archlinux.org/):
 ```
-sudo pacman -S --needed xterm libx11 xorg-xinit rofi git make gcc
+sudo pacman -S --needed libx11 xorg-xinit rofi git base-devel polybar xterm xorg
 ```
 Then you'd wanna clone the github repo:
 ```
@@ -63,12 +65,8 @@ cd tired-main
 ```
 Now, you just need to compile the WM.
 ### Having sudo enabled
-If you have sudo enabled, you can compile the WM as easily as:
-```
-make
-sudo mv ./tired /usr/bin/tired
-```
-Tip: Edit the Makefile as you like with `nano Makefile`, then `sudo make`
+If you have sudo enabled, you can compile the WM as easily as `make`, or `sudo make clean install` (`install` must be used within `clean`)
+Tip: Edit the Makefile as you like with `nano Makefile`, then `make`
 ### Using POSIX tools
 If you don't have sudo (i encourage you to installing sudo, it's simple), you can use the _old ancient way_.
 First, remember where you are with `pwd` (mentally save that as MEOW).
@@ -76,28 +74,7 @@ Then do:
 ```
 [cat@iusearchbtw tired-main]$ su -
 ```
-Do:
-```
-[root@iusearchbtw ~]# cd MEOW
-```
-Now, replace MEOW with the `pwd` command you previously took. Now, after all of this bs, do:
-```
-[root@iusearchbtw tired-main]# make && mv ./tired /usr/bin/tired
-```
-And then:
-```
-[root@iusearchbtw tired-main]# exit
-[cat@iusearchbtw tired-main]$
-```
-(was not using `sudo` really worth it?)
-## Running
-Assuming you have `xinit` installed (because told so in [the dependencies](https://github.com/noxss-dev/tired/tree/main#dependencies)) and you are in the `tired-main` directory, launch these commands:
-```
-mv xinit .xinitrc
-mv .xinitrc $HOME
-```
-If you want to apply this for `root` users too (requires `sudo`):
-```
-sudo cp $HOME/.xinitrc /root/.xinitrc
-```
-And make sure that your wallpapers on .xinitrc are with the absolute path (if there is `~` or `$HOME`, it won't work).
+Do `cd MEOW` replacing MEOW with the previously took `pwd` command.
+Now after all of this bs, do `make clean install` or `make`, and then `exit`.
+
+(was not using `sudo` really worth it?k).
