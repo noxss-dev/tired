@@ -1,4 +1,4 @@
-<DIV style="text-align: center;>
+<DIV style="text-align: center">
 ## Tired >:]
 </DIV>
 ![Tired Overview](screenshotp.png)
