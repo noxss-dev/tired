@@ -1,5 +1,5 @@
 ## Tired >:]
-![Tired Overview](screenshot.png)
+![Tired Overview](screenshotp.png)
 _i forgot to fastfetch, oopsi (i use arch btw)_
 
 A new window manager using Xlib. I needed to relax and i accidentaly builded a Window Manager :/
