@@ -52,7 +52,7 @@ If you don't have sudo (i encourage you to installing sudo, it's simple), you ca
 First, remember where you are with `pwd` (mentally save that as MEOW).
 Then do:
 ```
-[cat@iusearchbtw tired]$ su -
+[cat@iusearchbtw tired-main]$ su -
 ```
 Do:
 ```
@@ -60,13 +60,22 @@ Do:
 ```
 Now, replace MEOW with the `pwd` command you previously took. Now, after all of this bs, do:
 ```
-[root@iusearchbtw tired]# make && mv ./tired /usr/bin/tired
+[root@iusearchbtw tired-main]# make && mv ./tired /usr/bin/tired
 ```
 And then:
 ```
-[root@iusearchbtw tired]# exit
-[cat@iusearchbtw tired]$
+[root@iusearchbtw tired-main]# exit
+[cat@iusearchbtw tired-main]$
 ```
 (was not using `sudo` really worth it?)
 ## Running
-Assuming you have `xinit` installed (because told so in [the dependencies](https://github.com/noxss-dev/tired/tree/main#dependencies))
+Assuming you have `xinit` installed (because told so in [the dependencies](https://github.com/noxss-dev/tired/tree/main#dependencies)) and you are in the `tired-main` directory, launch these commands:
+```
+mv xinit .xinitrc
+mv .xinitrc $HOME
+```
+If you want to apply this for `root` users too (requires `sudo`):
+```
+sudo cp $HOME/.xinitrc /root/.xinitrc
+```
+And make sure that your wallpapers on .xinitrc are with the absolute path (if there is `~` or `$HOME`, it won't work).
