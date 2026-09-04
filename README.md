@@ -1,7 +1,7 @@
 <div align="center">
 <h1>Tired WM >:]</h1>
 </div>
-<img src="https://img.shields.io/badge/any_text-you_like-blue">
+<img src="https://img.shields.io/badge/idk_what_to-put_but_the_badge_looks_cool-blue">
 <img src="screenshotp.png">
 <p><i>i spoilered some features, oopsi (i use arch btw)</i></p>
 
