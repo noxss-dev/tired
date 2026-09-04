@@ -6,9 +6,9 @@
 <span>
 <img src="https://img.shields.io/badge/idk_wt_put_but-badges_look_cool-blue">
 <img src="https://img.shields.io/badge/i_use_arch_btw-red"></span><br>
-<p>&nbsp;</p>
 
-<p>A new window manager using Xlib. I needed to relax and i accidentaly builded a Window Manager :/</p>
+
+<p>A new window manager using Xlib. I needed to relax and i accidentaly builded a Window Manager instead :/</p>
 
 It's aesthetically kinda cool, duh :D
 ## Key Features
