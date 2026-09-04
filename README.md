@@ -22,7 +22,7 @@ The default shortcuts are:
 The classic methods for taking a screenshot **will likely not work**.
 
 In order to take a screenshot, you need to do:
-```
+```sh
 xwd -root | convert xwd:- screenshot.png
 ```
 This requires the X Applications and ImageMagick to be installed.
@@ -52,15 +52,15 @@ tired without headaches)
 
 You need to have `git` and `make` (for Arch users; installing `base-devel` gives a plenty of compilation tools including `make`), aswell the C compiler (i recommend `gcc`, make sure it's aliased to `cc`) 
 Here is a sample code to install dependencies on [Arch Linux](https://archlinux.org/):
-```
+```sh
 sudo pacman -S --needed libx11 xorg-xinit rofi git base-devel polybar xterm xorg
 ```
 Then you'd wanna clone the github repo:
-```
+```sh
 git clone https://github.com/noxss-dev/tired.git
 ```
 And changing directory:
-```
+```sh
 cd tired-main
 ```
 Now, you just need to compile the WM.
@@ -71,7 +71,7 @@ Tip: Edit the Makefile as you like with `nano Makefile`, then `make`
 If you don't have sudo (i encourage you to installing sudo, it's simple), you can use the _old ancient way_.
 First, remember where you are with `pwd` (mentally save that as MEOW).
 Then do:
-```
+```sh
 [cat@iusearchbtw tired-main]$ su -
 ```
 Do `cd MEOW` replacing MEOW with the previously took `pwd` command.
