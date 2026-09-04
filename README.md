@@ -1,10 +1,11 @@
 <div align="center">
 <h1>Tired WM >:]</h1>
 </div>
+
+<img src="screenshotp.png">
 <span>
 <img src="https://img.shields.io/badge/idk_wt_put_but-badges_look_cool-blue">
 <img src="https://img.shields.io/badge/i_use_arch_btw-red"></span><br>
-<img src="screenshotp.png">
 <p><i>i spoilered some features, oopsi</i></p>
 
 <p>A new window manager using Xlib. I needed to relax and i accidentaly builded a Window Manager :/</p>
