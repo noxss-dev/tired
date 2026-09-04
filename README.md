@@ -1,5 +1,6 @@
 ## Tired >:]
-![Tired Overview]()
+![Tired Overview](https://github.com/noxss-dev/tired/blob/main/screenshot.png)
+
 A new window manager using Xlib, written in C.
 Born because i watched LSP and it was horrible, i needed to relax and i accidentaly builded a Window Manager :/
 ## Key Features
