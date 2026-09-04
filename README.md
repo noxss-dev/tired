@@ -34,10 +34,12 @@ The dependencies are few but quite important;
 - `libx11` (necessary at compile-time, not runtime)
 - `xorg` (metapackage, necessary for the graphical stack, 
 basically the whole point, duh)
+
 The optional dependencies are:
 - `xinit` (or xorg-xinit, necessary if ya wanna launch
 tired without headaches)
 - `xorg-xrandr` (necessary if ya wanna use multimonitor)
+  
 You need to have Git and make, aswell as the C compiler.
 
 Here is a sample code to install dependencies on [Arch Linux](https://archlinux.org/):
