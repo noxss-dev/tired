@@ -1,7 +1,7 @@
 <div align="center">
 <h1>Tired >:]</h1>
 </div>
-![Tired Overview](screenshotp.png)
+<img src="screenshotp.png">
 _i spoilered some features, oopsi (i use arch btw)_
 
 A new window manager using Xlib. I needed to relax and i accidentaly builded a Window Manager :/
