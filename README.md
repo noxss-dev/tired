@@ -27,7 +27,7 @@ xwd -root | convert xwd:- screenshot.png
 ```
 This requires the X Applications and ImageMagick to be installed.
 
-***Note: We encourage r/UnixP#rn users to use a compositor like picom, as Tired doesn't have a formal config file (just as dwm).***
+***Note: We encourage r/UnixP#rn users to use a compositor like picom, as Tired doesn't have a formal config file (just as dwm). However, Tired startup hooks can be set on ~/.config/tired/hooks.***
   
 Tired is (and will always be) one file of C code, you'll prolly never see Tired being split in more C snippets. Thats la peace (lol).
 ## Building
@@ -46,7 +46,7 @@ The optional dependencies are:
 - `xinit` (or xorg-xinit, necessary if ya wanna launch
 tired without headaches)
 - `xorg-xrandr` (necessary if ya wanna use multimonitor)
-  
+- `xosd` (makes a cool text in the bottom :])
 You need to have Git and make, aswell as the C compiler.
 
 Here is a sample code to install dependencies on [Arch Linux](https://archlinux.org/):
