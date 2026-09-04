@@ -89,11 +89,11 @@ xterm &
 How nice is that? >_<
 To make sure that TiredWM will be ran, we need to use an xinitrc (still):
 ```sh
-echo "exec tiredwm" > ~/.xinitrc
+echo "exec tired" > ~/.xinitrc
 chmod +x ~/.xinitrc
 ```
 Else you could just:
 ```sh
-DISPLAY=:0 tiredwm
+exec tired
 ```
 (Not tested btw)
