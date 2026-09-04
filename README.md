@@ -78,3 +78,22 @@ Do `cd MEOW` replacing MEOW with the previously took `pwd` command.
 Now after all of this bs, do `make clean install` or `make`, and then `exit`.
 
 (was not using `sudo` really worth it?k).
+## Running
+Since of 4th September 2026, an `.xinitrc` is  required other for executing Tired in an X server. Hooks can be defined in the `~/.config/tired/hooks` configuration file;
+```sh
+#!/bin/sh
+feh --bg-scale $HOME/Download/my-wallpaper.png &
+polybar &
+xterm &
+```
+How nice is that? >_<
+To make sure that TiredWM will be ran, we need to use an xinitrc (still):
+```sh
+echo "exec tiredwm" > ~/.xinitrc
+chmod +x ~/.xinitrc
+```
+Else you could just:
+```sh
+DISPLAY=:0 tiredwm
+```
+(Not tested btw)
