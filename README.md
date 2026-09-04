@@ -3,7 +3,7 @@
 </div>
 <span>
 <img src="https://img.shields.io/badge/idk_wt_put_but-badges_look_cool-blue">
-<img src="https://img.shields.io/badge/i_use_arch_btw-red"></span>
+<img src="https://img.shields.io/badge/i_use_arch_btw-red"></span><br>
 <img src="screenshotp.png">
 <p><i>i spoilered some features, oopsi (i use arch btw)</i></p>
 
