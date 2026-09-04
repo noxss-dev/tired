@@ -1,4 +1,6 @@
+<DIV style="text-align: center;>
 ## Tired >:]
+</DIV>
 ![Tired Overview](screenshotp.png)
 _i spoilered some features, oopsi (i use arch btw)_
 
