@@ -11,10 +11,15 @@ The default shortcuts are:
 - Windows+D = App Menu
 - Windows+K = Kill an app
 - Thats it (for today).
+  
 The classic methods for taking a screenshot **will likely not work**.
+
 In order to take a screenshot, you need to do:
+```
 xwd -root | convert xwd:- screenshot.png
+```
 This requires the X Applications and ImageMagick to be installed.
+
 ***Note: We encourage r/UnixP#rn users to use a compositor like picom, as Tired doesn't have a formal config file (just as dwm).***
   
 Tired is (and will always be) one file of C code, you'll prolly never see Tired being split in more C snippets. Thats la peace (lol).
