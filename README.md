@@ -2,8 +2,9 @@
 ![Tired Overview](https://github.com/noxss-dev/tired/blob/main/screenshot.png)
 _i forgot to fastfetch, oopsi (i use arch btw)_
 
-A new window manager using Xlib, written in C.
-Born because i watched LSP and it was horrible, i needed to relax and i accidentaly builded a Window Manager :/
+A new window manager using Xlib. I needed to relax and i accidentaly builded a Window Manager :/
+
+It's aesthetically kinda cool, duh :D
 ## Key Features
 The Modifier key is set (for default) to Mod4, which corresponds to the Super key, or for the friends the Windows key.
 
