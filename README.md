@@ -68,3 +68,5 @@ And then:
 [cat@iusearchbtw tired]$
 ```
 (was not using `sudo` really worth it?)
+## Running
+Assuming you have `xinit` installed (because told so in [the dependencies](https://github.com/noxss-dev/tired/tree/main#dependencies))
