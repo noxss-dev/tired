@@ -1,5 +1,5 @@
 <div align="center">
-<h1>Tired >:]</h1>
+<h1>Tired WM >:]</h1>
 </div>
 <img src="screenshotp.png">
 <p><i>i spoilered some features, oopsi (i use arch btw)</i></p>
