@@ -10,6 +10,7 @@
 #define MAX(a, b) ((a) > (b) ? (a) : (b))
 int main(void)
 {
+	printf("Why are people telling this shit is vibecoded im crine, atp i could stop making Tired :(\n");
     if (geteuid() == 0) {
 	fprintf(stderr, "Running as root: aborting, as this could be extremely dangerous for typos.");
 	exit(1);
