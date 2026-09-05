@@ -1,4 +1,6 @@
 #include <X11/Xlib.h>
+#include <string.h>
+#include <X11/keysym.h>
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdio.h>
@@ -8,14 +10,20 @@
 #define MAX(a, b) ((a) > (b) ? (a) : (b))
 int main(void)
 {
+    if (geteuid() == 0) {
+	fprintf(stderr, "Running as root: aborting, as this could be extremely dangerous for typos.");
+	exit(1);
+	}
     Display * dpy;
     XWindowAttributes attr;
     XButtonEvent start;
     XEvent ev;
 
     if(!(dpy = XOpenDisplay(0x0))) return 1;
-        Cursor c = XcursorLibraryLoadCursor(dpy, "arrow");
-        XDefineCursor(dpy, DefaultRootWindow(dpy), c);
+	Screen* screen = DefaultScreenOfDisplay(dpy);
+	
+	Cursor c = XcursorLibraryLoadCursor(dpy, "arrow");
+	XDefineCursor(dpy, DefaultRootWindow(dpy), c);
     XGrabKey(dpy, XKeysymToKeycode(dpy, XStringToKeysym("F1")), Mod1Mask,
             DefaultRootWindow(dpy), True, GrabModeAsync, GrabModeAsync);
     XGrabButton(dpy, 1, Mod1Mask, DefaultRootWindow(dpy), True,
@@ -23,26 +31,24 @@ int main(void)
     XGrabButton(dpy, 3, Mod1Mask, DefaultRootWindow(dpy), True,
             ButtonPressMask|ButtonReleaseMask|PointerMotionMask, GrabModeAsync, GrabModeAsync, None, None);
     XGrabKey(dpy, XKeysymToKeycode(dpy, XStringToKeysym("D")), Mod4Mask,
-            DefaultRootWindow(dpy), True, GrabModeAsync, GrabModeAsync);
+	    DefaultRootWindow(dpy), True, GrabModeAsync, GrabModeAsync);
     XGrabKey(dpy, XKeysymToKeycode(dpy, XStringToKeysym("K")), Mod4Mask,
             DefaultRootWindow(dpy), True, GrabModeAsync, GrabModeAsync);
-    XGrabKey(dpy, XKeysymToKeycode(dpy, XStringToKeysym("E")), Mod4Mask,
-             DefaultRootWindow(dpy), True, GrabModeAsync, GrabModeAsync);
     start.subwindow = None;
-   system("polybar &");
-
+   system("$HOME/.config/tired/hooks");
      for(;;)
     {
         XNextEvent(dpy, &ev);
+	
         if(ev.type == KeyPress && ev.xkey.subwindow != None)
-           {
-                if (ev.xkey.keycode == XKeysymToKeycode(dpy, XStringToKeysym("D")) && ev.xkey.state & Mod4Mask) {
-                        system("DISPLAY=:0 rofi -show drun");
-                } else if (ev.xkey.keycode == XKeysymToKeycode(dpy, XStringToKeysym("K")) && ev.xkey.state & Mod4Mask) {
-                        system("DISPLAY=:0 xkill");
-                }
-                else { XRaiseWindow(dpy, ev.xkey.subwindow); }
-        }
+           { 
+		if (ev.xkey.keycode == XKeysymToKeycode(dpy, XStringToKeysym("D")) && ev.xkey.state & Mod4Mask) {
+			system("DISPLAY=:0 rofi -show drun");
+		} else if (ev.xkey.keycode == XKeysymToKeycode(dpy, XStringToKeysym("K")) && ev.xkey.state & Mod4Mask) {
+			system("DISPLAY=:0 xkill");
+		}
+		else { XRaiseWindow(dpy, ev.xkey.subwindow); }
+ 	}
         else if(ev.type == ButtonPress && ev.xbutton.subwindow != None)
         {
             XGetWindowAttributes(dpy, ev.xbutton.subwindow, &attr);

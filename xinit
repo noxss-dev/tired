@@ -1,4 +1,2 @@
 #!/bin/sh
-feh --bg-scale $HOME/Downloads/gudo.png &
-xterm &
-exec ./tired
+exec tired
