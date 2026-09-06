@@ -2,7 +2,7 @@
 <h1>Tired WM >:]</h1>
 </div>
 
-<img src="screenshotp.png">
+<img src="screenshotp.jpg">
 <span>
 <img src="https://img.shields.io/badge/idk_wt_put_but-badges_look_cool-blue">
 <img src="https://img.shields.io/badge/i_use_arch_btw-red"></span><br>
